@@ -227,6 +227,10 @@ ul.eventos li img {
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+.recursos article img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
 .recursos article h3{
     margin-bottom: 30px;
 }
