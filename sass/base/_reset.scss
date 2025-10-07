@@ -1,3 +1,26 @@
 //imports
 @use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
 
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    height: 100%;
+    margin: 0;
+}
+
+/* generales */
+body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:  $color-fondo-obscuro;
+}
