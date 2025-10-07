@@ -6,8 +6,8 @@
 header{
     display: flex;
     position: relative;
-    justify-content: space-between;
-    align-items: center;
+    //justify-content: space-between;
+    //align-items: center;
     padding: 30px;
     background-color: $color-fondo-claro;
     div{
@@ -32,13 +32,60 @@ header{
             }
         }
     }
+    .navbar{
+        ul{
+            display:flex;
+            li{
+                list-style: none;
+                font-size: 30px;
+                padding: 5px;
+                margin: 0 5px;
+                background-color: #1976d2;
+                border-radius: 6px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1301px) {
+    header{
+        .dropdown{
+            display: none;
+        }
+        img{
+            position: absolute;
+            right: 0%;
+            left:auto;
+            transform: translate(0%, -50%);
+            margin-right: 70px;
+        }
+        .navbar{
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    header{
+        .navbar{
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 770px) {
     header{
         img{
-            position: relative;
-            transform: translate(-50%,-0%);
+            position: absolute;
+            right: 0%;
+            left:auto;
+            transform: translate(0%, -50%);
+            margin-right: 20px;
         }
     }
 }
