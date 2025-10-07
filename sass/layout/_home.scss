@@ -25,6 +25,7 @@ header{
     }
 //revisar dropdown, talvez vaya afuera de header
     .dropdown-menu{
+        background-color: $color-botones;
         li{
             a{
                 font-size: 24px;
